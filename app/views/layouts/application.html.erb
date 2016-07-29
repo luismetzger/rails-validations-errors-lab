@@ -13,6 +13,17 @@
   <title>RailsValidationsErrors</title>
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="alert-danger">
+          <% flash.each do |messages| %>
+            <h3 class="text-center"><%= messages %></h3>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
